@@ -65,7 +65,7 @@ function Signup() {
 
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-t from-blue-300 to-blue-900">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-t from-yellow-300 to-yellow-900">
       <div className="w-full max-w-md p-8 bg-grdient-to-r from-white to-gray-600 rounded  shadow-2xl">
         <h1 className="text-4xl font-bold text-center mb-8">Signup</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -131,7 +131,7 @@ function Signup() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-900 text-white font-bold py-3 px-4 rounded-md transition-colors duration-300"
+            className="w-full bg-yellow-600 hover:bg-yellow-900 text-white font-bold py-3 px-4 rounded-md transition-colors duration-300"
           >
             Signup
           </button>

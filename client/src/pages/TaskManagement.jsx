@@ -101,7 +101,7 @@ const TaskManagement = () => {
   };
 
   return (
-   <div className="relative h-screen flex flex-col  mx-auto  bg-gradient-to-t from-blue-300 to-blue-900">
+   <div className="relative h-screen flex flex-col  mx-auto  bg-gradient-to-t from-yellow-300 to-yellow-900">
        <LogOut
          className="text-white absolute cursor-pointer top-2 right-10"
          onClick={logouthandler}
@@ -167,7 +167,7 @@ const TaskManagement = () => {
           </select>
           <button
             onClick={addTask}
-            className="w-[50%] ml-32 mx-auto p-[10px] bg-blue-600 text-white rounded-[5px] cursor-pointer"
+            className="w-[50%] ml-32 mx-auto p-[10px] bg-yellow-600 text-white rounded-[5px] cursor-pointer"
           >
             Add Task
           </button>
