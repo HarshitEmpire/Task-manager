@@ -26,7 +26,7 @@ function Signup() {
 
   const signUp = async () => {
     try{
-      const response = await axios.post("https://task-manager-nu-murex.vercel.app/", {
+      const response = await axios.post("https://task-manager-eld0.onrender.com/api/auth/signup", {
         firstName,
         lastName,
         email,

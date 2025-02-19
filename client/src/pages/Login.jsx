@@ -26,7 +26,7 @@ function Login() {
     setIsLoading(true);
     try {
 
-      const res = await axios.post("https://task-manager-nu-murex.vercel.app/", {
+      const res = await axios.post("https://task-manager-eld0.onrender.com/api/auth/login", {
         email,
         password,
       }, {withCredentials: true});
