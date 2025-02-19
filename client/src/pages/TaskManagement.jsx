@@ -30,7 +30,7 @@ const TaskManagement = () => {
     e.preventDefault();
     //call backend api to save task
     const response = await axios.post(
-      "https://w3villa-assignment-16no.onrender.com/api/task ",
+      "https://task-manager-nu-murex.vercel.app/",
       { ...task },
       { withCredentials: true }
     );
@@ -46,7 +46,7 @@ const TaskManagement = () => {
   useEffect(() => {
     //call backend api to get all tasks
     const getTasks = async () => {
-      const response = await axios.get("https://w3villa-assignment-16no.onrender.com/api/tasks", {
+      const response = await axios.get("https://task-manager-nu-murex.vercel.app/", {
         withCredentials: true,
       });
       const data = await response.data;
@@ -58,7 +58,7 @@ const TaskManagement = () => {
 
   const updateTaskStatus = async (id, status) => {
     const response = await axios.put(
-      `https://w3villa-assignment-16no.onrender.com/api/task/${id}`,
+      `https://task-manager-nu-murex.vercel.app//task/${id}`,
       { status },
       { withCredentials: true }
     );
@@ -82,7 +82,7 @@ const TaskManagement = () => {
   const deleteTask = async (id) => {
     //call backend api to delete task
     const response = await axios.delete(
-      `https://w3villa-assignment-16no.onrender.com/api/task/${id}`,
+      `https://task-manager-nu-murex.vercel.app//task/${id}`,
       { withCredentials: true }
     );
     const data = await response.data;
